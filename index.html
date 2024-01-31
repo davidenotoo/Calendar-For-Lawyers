@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Appuntamenti</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/icon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3498db">
+
+  <!-- Includi jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    .menu-content {
+      display: none;
+    }
+
+    /* Stile del tasto */
+    .copyButton {
+      background-color: #1a73e8;
+      /* Colore blu di Google */
+      color: #ffffff;
+      /* Testo bianco */
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Stile del tasto quando è stato copiato */
+    .copiedButton {
+      background-color: #418f44;
+      /* Colore verde */
+      color: #ffffff;
+      margin-left: 48%;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="custom-menu">
+        <!-- <button type="button" id="sidebarCollapse" class="btn btn-primary" data-content-id="homepage-content">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button> -->
+      </div>
+      <h1><a href="index.html" class="logo">APPUNTAMENTI</a></h1>
+      <ul class="list-unstyled components mb-5">
+        <li class="active">
+          <a href="#" data-content-id="fabio-gervasi"><span class="fa fa-user mr-3"></span> Gervasi Fabio</a>
+        </li>
+        <li>
+          <a href="#" data-content-id="antonio-lombardo"><span class="fa fa-user mr-3"></span> Lombardo Antonio</a>
+        </li>
+        <li>
+          <a href="#" data-content-id="nino-pollina"><span class="fa fa-user mr-3"></span> Lombardo Nino</a>
+        </li>
+        <li>
+          <a href="#" data-content-id="craparo-francesca"><span class="fa fa-user mr-3"></span> Craparo Francesca</a>
+        </li>
+        <li>
+          <a href="#" data-content-id="montalto-ida"><span class="fa fa-user mr-3"></span> Montalto Ida</a>
+        </li>
+        <li>
+          <a href="#" data-content-id="serafino-fabio"><span class="fa fa-user mr-3"></span> Serafino Fabio</a>
+        </li>
+
+        <li>
+          <a href="#" data-content-id="rocco-daniela"><span class="fa fa-user mr-3"></span> Rocco Daniela</a>
+        </li>
+        <li>
+          <a href="#" data-content-id="pampalone-vito"><span class="fa fa-user mr-3"></span> Pampalone Vito</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 pt-5">
+      <h2 class="mb-4" style="background-color: rgb(168, 168, 168); text-align: center; border-radius: 20px; margin-left: 25%;
+      margin-right: 25%;">Appuntamenti</h2>
+
+      <!-- Contenuto specifico per ciascun pulsante del menu -->
+
+      <div id="fabio-gervasi" class="menu-content">
+        <!-- Tasto con attributo onclick per la funzione di copia -->
+        <button class="copyButton"
+          onclick="copyToClipboard(this, 'https://calendar.app.google/1vxJhD2CvowQfaSTA')">Copia Link</button>
+
+        <h3 style="text-align: center; border-radius: 20px;">Gervasi Fabio</h3>
+        <!-- Calendar -->
+        <iframe
+          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2u4Nrqp2wqhRpndAQPjkN9KzhT5KxUh0lUxlbM2srDwDjxVVMnSI63_rhISQ54gUbN-6sawbD5?gv=true"
+          style="border: 0" width="100%" height="1070" frameborder="0"></iframe>
+      </div>
+
+      <div id="antonio-lombardo" class="menu-content">
+        <h3 style="text-align: center; border-radius: 20px;">Lombardo Antonio</h3>
+        <!-- Calendar -->
+      </div>
+
+      <div id="nino-pollina" class="menu-content">
+        <h3 style="text-align: center; border-radius: 20px;">Lombardo Nino</h3>
+        <!-- Calendar -->
+      </div>
+
+      <div id="craparo-francesca" class="menu-content">
+        <h3 style="text-align: center; border-radius: 20px;">Craparo Francesca</h3>
+        <!-- Calendar -->
+      </div>
+
+      <div id="montalto-ida" class="menu-content">
+        <h3 style="text-align: center; border-radius: 20px;">Montalto Ida</h3>
+        <!-- Calendar -->
+      </div>
+      <div id="serafino-fabio" class="menu-content">
+        <h3 style="text-align: center; border-radius: 20px;">Serafino Fabio</h3>
+        <!-- Calendar -->
+      </div>
+      <div id="rocco-daniela" class="menu-content">
+        <h3 style="text-align: center; border-radius: 20px;">Rocco Daniela</h3>
+        <!-- Calendar -->
+      </div>
+      <div id="pampalone-vito" class="menu-content">
+        <h3 style="text-align: center; border-radius: 20px;">Pampalone Vito</h3>
+        <!-- Calendar -->
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      "use strict";
+
+      var fullHeight = function () {
+        $('.js-fullheight').css('height', $(window).height());
+        $(window).resize(function () {
+          $('.js-fullheight').css('height', $(window).height());
+        });
+      };
+      fullHeight();
+
+      // Gestisci il clic sul pulsante della barra laterale
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+
+        // Mostra o nascondi il contenuto in base allo stato della barra laterale
+        if ($('#sidebar').hasClass('active')) {
+          $('.menu-content').show();
+        } else {
+          $('.menu-content').hide();
+        }
+      });
+
+      // Gestisci il clic sui link della barra laterale
+      $('#sidebar ul li a').on('click', function () {
+        var contentId = $(this).data('content-id');
+        // Nascondi tutti i contenuti
+        $('.menu-content').hide();
+        // Mostra il contenuto specifico
+        $('#' + contentId).show();
+      });
+    });
+
+
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/js/service-worker.js')
+        .then(function (registration) {
+          console.log('Service Worker registrato con successo:', registration);
+        })
+        .catch(function (error) {
+          console.error('Errore durante la registrazione del Service Worker:', error);
+        });
+    }
+  </script>
+
+  <!-- Funzione generica per copiare il link -->
+  <script>
+    function copyToClipboard(button, link) {
+      var tempInput = document.createElement("input");
+      tempInput.value = link;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      tempInput.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+
+      button.innerHTML = "&#10004;";
+
+      button.classList.add('copiedButton');
+      setTimeout(function () {
+        button.classList.remove('copiedButton');
+        button.innerHTML = "Copia Link";
+      }, 10000);
+    }
+  </script>
+
+</body>
+
+</html>
