@@ -1,2 +1,2 @@
-## Calendar-For-Lawyers Public
-- Progetto multi container di calendari Google per facilitare la condivisione di appuntamenti e il lavoro dei segretari.
+## Calendar-For-Lawyers
+- Multi container di calendari Google per facilitare la condivisione di appuntamenti tra avvocati e segretari.
